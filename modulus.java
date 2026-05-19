@@ -18,6 +18,8 @@
 //     }
 // }
 
+// modulus operator 
+
 
 import java.util.Scanner;
 
