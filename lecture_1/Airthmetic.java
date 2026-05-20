@@ -1,3 +1,4 @@
+package lecture_1;
 public class Airthmetic{
     public static void main(String[] args){
         // int 
