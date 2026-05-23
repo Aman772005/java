@@ -146,20 +146,101 @@
 //     }
 // }
 
+// import java.util.Scanner;
+
+// public class if_else {
+
+//     public static void main(String[] args) {
+        
+//         Scanner sc = new Scanner(System.in);
+
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         if((a+b > c) && (b+c > a) && (c+a > b)){
+//             System.out.println("are sides of triangle");
+//         }else System.out.println("are not sides of triangle");
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class if_else{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+
+//         if(n%5 == 0 && n%3 == 0){
+//             System.out.println("reble kid");
+//         }else if(n%5 == 0){
+//             System.out.println("Riya");
+//         }else if(n%3 == 0){
+//             System.out.println("Banu");
+//         }else{
+//             System.out.println("Isha");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class if_else {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+
+//         int area = a*b ;
+//         int parimeter = 2*(a+b);
+
+//         if(area > parimeter){
+//             System.out.println("area" + area + "is greater that parimeter"+parimeter );
+//         }else{
+//             System.out.println("area" + area + "is smaller that parimeter"+parimeter);
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class if_else {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+
+//         if(a>0 && b>0)System.out.println("1 qua");
+//         else if(a>0 && b<0)System.out.println("2 qua");
+//         else if(a<0 && b<0)System.out.println("3 qua");
+//         else if(a<0 && b>0)System.out.println("4 qua");
+//         else if(a==0 && b>0 || b<0)System.out.println("y-axis");
+//         else if(b==0 && a>0 || a<0)System.out.println("x-axis");
+//         else System.out.println("on origin");
+//     }
+// }
+
 import java.util.Scanner;
 
 public class if_else {
 
     public static void main(String[] args) {
-        
         Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if((a+b > c) && (b+c > a) && (c+a > b)){
-            System.out.println("are sides of triangle");
-        }else System.out.println("are not sides of triangle");
+        if(a>b){
+            if(a>c)System.out.println("a is greatest");
+            else System.out.println("c is greatest");
+        }else{
+            if(b>c) System.out.println("b is greatest");
+            else System.out.println("c is greatest");
+        }
     }
 }
