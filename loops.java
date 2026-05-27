@@ -136,14 +136,30 @@
 //     }
 // }
 
+// import java.util.Scanner;
+// public class loops{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+
+//         for(int i=65;i<=90;i++){
+//             System.out.println((char)i + " " + i);
+//         }
+//     }
+// }
+
 import java.util.Scanner;
 public class loops{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        
+        int n = sc.nextInt();
 
-        for(int i=65;i<=90;i++){
-            System.out.println((char)i + " " + i);
+
+        for(int i=2;i<=n-1;i++){
+            if(n%i == 0){
+                System.out.println("composite number");
+                break ;
+            }
         }
     }
 }
