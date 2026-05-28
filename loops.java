@@ -148,19 +148,58 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class loops{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         boolean flag = true;
+//         for(int i=2;i<=Math.sqrt(n);i++){
+//             if(n%i == 0){
+//                flag = false ;
+//                 break ;
+//             }
+//         }
+//         if(n == 1) System.out.println("Neither prime nor composite");
+//        else if(flag == false) System.out.println("composite number");
+//         else System.out.println("prime number");
+//     }
+// }
+
+// public class loops{
+//     public static void main(String[] args) {
+//         int i = 1 ;
+//         while(i<=10){
+//             System.out.println(i);
+//             i++;
+//         }
+//     }
+// }
+
+// public class loops{
+//     public static void main(String[] args) {
+//         int i = 11 ;
+//         do{
+//             System.out.println(i);
+//             i++;
+//         }while(i<=10);
+//     }
+// }
+
+import java.util.Scanner ;
+
 public class loops{
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-
-
-        for(int i=2;i<=n-1;i++){
-            if(n%i == 0){
-                System.out.println("composite number");
-                break ;
-            }
+        if(n==0)n=1 ;
+        int count = 0;
+        while(n != 0){
+            n = n/10;
+            count++;
         }
+        System.out.println(count);
     }
 }
 
