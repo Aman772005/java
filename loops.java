@@ -187,23 +187,91 @@
 //     }
 // }
 
-import java.util.Scanner ;
+// import java.util.Scanner ;
 
-public class loops{
+// public class loops{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         if(n==0)n=1 ;
+//         int count = 0;
+//         while(n != 0){
+//             n = n/10;
+//             count++;
+//         }
+//         System.out.println(count);
+//     }
+// }
+
+// import java.util.Scanner ;
+
+// public class loops{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int a = 0;
+//         if(n<0) n=-n ;
+//         while(n != 0){
+//             a =a+ n%10;
+//             n = n/10;
+//         }
+//         System.out.println(a);
+//     }
+// }
+
+// import java.util.Scanner ;
+
+// public class loops{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int r = 0;
+//         int sum = 0;
+//         while(n != 0){
+//             r *= 10;
+//             sum += n%10;
+//             r += n%10;
+//             n = n/10;
+//         }
+//         System.out.println(r);
+//         System.out.println(-sum);
+//     }
+// }
+
+
+// import java.util.Scanner;
+
+// public class loops {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         int factorial = 1;
+
+//         while (n > 1) {
+//             factorial = factorial * n;
+//             n--;
+//         }
+
+//         System.out.println(factorial);
+//     }
+// }
+
+import java.util.Scanner;
+
+public class loops {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if(n==0)n=1 ;
-        int count = 0;
-        while(n != 0){
-            n = n/10;
-            count++;
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int power = 1;
+
+        while (b > 0) {
+            power = power * a;
+            b--;
         }
-        System.out.println(count);
+
+        System.out.println(power);
     }
 }
-
-
-
-
-
