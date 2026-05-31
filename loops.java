@@ -257,21 +257,21 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class loops {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+// public class loops {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int power = 1;
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int power = 1;
 
-        while (b > 0) {
-            power = power * a;
-            b--;
-        }
+//         while (b > 0) {
+//             power = power * a;
+//             b--;
+//         }
 
-        System.out.println(power);
-    }
-}
+//         System.out.println(power);
+//     }
+// 
