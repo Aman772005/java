@@ -92,6 +92,8 @@
 
 // }
 
+// **** combination of alphabates and number **** 
+
 // import java.util.Scanner ;
 
 // public class pattern {
@@ -112,4 +114,4 @@
 //             System.out.println();
 //         }
 //     }
-}
+// }
