@@ -116,18 +116,71 @@
 //     }
 // }
 
+// import java.util.Scanner;
+
+// public class pattern{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Number of lines : ");
+//         int a = sc.nextInt();
+//         int n = a ;
+
+//         for(int i = 1 ; i<=a ; i++){
+//             for(int j = 1;j<=n;j++){
+//                 System.out.print((char)(i+64));
+//             }
+//             n--;
+//             System.out.println();
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class pattern{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("length : ");
+//         int a = sc.nextInt();
+//         System.out.println("Breadth : ");
+//         int b = sc.nextInt();
+
+//         for(int i = 1;i<=b;i++){
+//             for(int j = 1;j<=a;j++){
+                
+//                 if(i==1 || i==b || j==1 || j==a){
+//                     System.out.print("* ");
+//                 }else{
+//                     System.out.print("  ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
 import java.util.Scanner;
 
 public class pattern{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Number of lines : ");
         int a = sc.nextInt();
+        int n = a/2 ;
+        n = n+1 ;
 
-        for(int i = a ; i>= 1 ; i--){
-            for(int j = 1;j<=i;j++){
-                System.out.print(" * ");
+        System.out.println(n);
+
+        for(int i = 1 ; i<=a;i++){
+            for(int j = 1;j<=a;j++){
+                if(i==n || j==n){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
             }
             System.out.println();
         }
