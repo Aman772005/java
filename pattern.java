@@ -380,24 +380,142 @@
 //     }
 // }
 
+// import java.util.Scanner;
+// public class pattern {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         int a = 1;
+       
+        
+
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=n-i;j++){
+//                 System.out.print(" "+" ");
+//             }
+//             for(int j= 1;j<=(2*i-1);j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println(" ");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class pattern {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         int a = 1;
+//         int nsp = n-1 ;
+//         int nst = 1 ;
+       
+        
+
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=nsp;j++){
+//                 System.out.print(" "+" ");
+//             }
+//             for(int j= 1;j<=nst;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println(" ");
+//             nsp--;
+//             nst+= 2;
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class pattern {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         int nsp = n-1 ;
+//         int nst = 1 ;
+       
+        
+
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=nsp;j++){
+//                 System.out.print(" "+" ");
+//             }
+//             for(int j= 1;j<=nst;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println(" ");
+//             nsp--;
+//             nst+= 2;
+//         }
+
+//         nsp = 1 ;
+//         nst = 2*n-3 ;
+       
+        
+
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=nsp;j++){
+//                 System.out.print(" "+" ");
+//             }
+//             for(int j= 1;j<=nst;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println(" ");
+//             nsp++;
+//             nst-= 2;
+//         }
+//     }
+// }
+
+// import java.util.Scanner ;
+
+// public class pattern {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         int n = sc.nextInt();
+
+//          for(int j = 1;j<=2*n-1;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println();
+
+//         for(int i = 1; i<=n-1;i++){
+           
+//             for(int j=1;j<=n-i;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             for(int j= 1; j<= 2*i-1;j++){
+//                 System.out.print(" "+" ");
+//             }
+//             for(int j = 1;j<=n-i;j++){
+//                 System.out.print("*"+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+
 import java.util.Scanner;
+
 public class pattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int a = 1;
-       
-        
 
-        for(int i = 1;i<=n;i++){
-            for(int j = 1;j<=n-i;j++){
-                System.out.print(" "+" ");
+        for(int i = 1;i<=2*n-1;i++){
+            for(int j = 1;j<=2*n-1;j++){
+                int a = i,b=j;
+                if(i>n) a = 2*n-i;
+                if(j>n) b=2*n-j;
+                System.out.print(Math.min(a,b)+" ");
             }
-            for(int j= 1;j<=(2*i-1);j++){
-                System.out.print("*"+" ");
-            }
-            System.out.println(" ");
+            System.out.println();
         }
     }
 }
