@@ -32,13 +32,18 @@ public class Array {
         int[] arr = new int[n];
 
         int sumofarr = 0 ;
+        int productofarr = 1;
+
+        System.out.print("Enter arr "+ n);
 
         for(int i = 0;i<n;i++){
             arr[i]= sc.nextInt();
              sumofarr += arr[i] ;
+             productofarr *= arr[i];
         }
 
         System.out.println(sumofarr);
+        System.out.println(productofarr);
 
 
         // for(int i = 0;i<n;i++){
