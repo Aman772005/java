@@ -52,5 +52,7 @@ public class Array {
         //     }
         // }
 
+        // product of arr and sum of arr 
+
     }
 }
