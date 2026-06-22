@@ -26,24 +26,24 @@ public class Array {
         //     System.out.println(arr[i]);
         // }
 
-        System.out.print("Enter array size : ");
-        int n = sc.nextInt();
+        // System.out.print("Enter array size : ");
+        // int n = sc.nextInt();
 
-        int[] arr = new int[n];
+        // int[] arr = new int[n];
 
-        int sumofarr = 0 ;
-        int productofarr = 1;
+        // int sumofarr = 0 ;
+        // int productofarr = 1;
 
-        System.out.print("Enter arr "+ n);
+        // System.out.print("Enter arr "+ n);
 
-        for(int i = 0;i<n;i++){
-            arr[i]= sc.nextInt();
-             sumofarr += arr[i] ;
-             productofarr *= arr[i];
-        }
+        // for(int i = 0;i<n;i++){
+        //     arr[i]= sc.nextInt();
+        //      sumofarr += arr[i] ;
+        //      productofarr *= arr[i];
+        // }
 
-        System.out.println(sumofarr);
-        System.out.println(productofarr);
+        // System.out.println(sumofarr);
+        // System.out.println(productofarr);
 
 
         // for(int i = 0;i<n;i++){
@@ -54,10 +54,14 @@ public class Array {
 
         // product of arr and sum of arr 
 
+        int[] arr = {-6,7,23,454,43,3324,-43,-5};
+        int max = arr[0];
+
+        for(int i = 0;i<8;i++){
+            if(arr[i]>max) max = arr[i] ;
+        }
+        System.out.println(max);
+
     }
 }
 
-// arr 
-// arr
-// commemts
-// one day left
