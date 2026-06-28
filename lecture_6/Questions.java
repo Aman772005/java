@@ -69,22 +69,42 @@ package lecture_6;
 
 // *** question-4 *** 
 
-import java.util.Arrays;
+// import java.util.Arrays;
+
+// public class Questions {
+
+//     public static void main(String[] args) {
+//         int arr[] = {4, 10, 10, 6, 8};
+
+//         Arrays.sort(arr);
+
+//         int max = arr[arr.length - 1];
+
+//         for (int i = arr.length - 2; i >= 0; i--) {
+//             if (arr[i] != max) {
+//                 System.out.println("Second max number is: " + arr[i]);
+//                 break;
+//             }
+//         }
+//     }
+// }
+
+// *** question-5 *** 
 
 public class Questions {
 
     public static void main(String[] args) {
-        int arr[] = {4, 10, 10, 6, 8};
+        int arr[]= {1,2,3,45,5};
 
-        Arrays.sort(arr);
+        int arr1[] = new int [arr.length];
+        int j = 0;
 
-        int max = arr[arr.length - 1];
-
-        for (int i = arr.length - 2; i >= 0; i--) {
-            if (arr[i] != max) {
-                System.out.println("Second max number is: " + arr[i]);
-                break;
-            }
+        for(int i=arr.length-1;i>=0;i--){
+            arr1[j]=arr[i];
+            j++;
+        }
+        for(int elem : arr1){
+            System.out.print(elem+" ");
         }
     }
 }
