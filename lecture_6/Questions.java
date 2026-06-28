@@ -91,21 +91,67 @@ package lecture_6;
 
 // *** question-5 *** 
 
+// soultion-1 
+
+//public class Questions {
+
+//     public static void main(String[] args) {
+//         int arr[]= {1,2,3,45,5};
+
+//         int arr1[] = new int [arr.length];
+//         int j = 0;
+
+//         for(int i=arr.length-1;i>=0;i--){
+//             arr1[j]=arr[i];
+//             j++;
+//         }
+//         for(int elem : arr1){
+//             System.out.print(elem+" ");
+//         }
+//     }
+// }
+
+
+// solution-2 
+
+// public class Questions {
+
+//     public static void main(String[] args) {
+//         int arr[]= {3,19,56,9,83,18,24,85,14};
+//         int n = arr.length;
+//         int i = 2 , j= n-4;
+//         while (i<j) {
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp ;
+//             i++;
+//             j--;
+//         }
+//         // for(int i = 0;i<n/2;i++){
+//         //     int temp = arr[i];
+//         //     arr[i] = arr[n-1-i];
+//         //     arr[n-1-i] = temp ;
+//         //     }
+//         for(int elem : arr) System.out.print(elem+" ");
+//     }
+// }
+
+
+// **** question-6 *** 
+
 public class Questions {
 
     public static void main(String[] args) {
-        int arr[]= {1,2,3,45,5};
+        int arr[] = {1,2,3,4,5};
+        int d = 2;
+        int n = arr.length-1 ;
 
-        int arr1[] = new int [arr.length];
-        int j = 0;
-
-        for(int i=arr.length-1;i>=0;i--){
-            arr1[j]=arr[i];
-            j++;
+        for(int i = 0;i<d;i++){
+            int temp = arr[0];
+            arr[0] = arr[d-1];
+            arr[n] = temp ;
         }
-        for(int elem : arr1){
-            System.out.print(elem+" ");
-        }
+        for(int elem : arr) System.out.print(elem+"  ");
     }
 }
 
