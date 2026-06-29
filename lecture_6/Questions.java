@@ -139,19 +139,5 @@ package lecture_6;
 
 // **** question-6 *** 
 
-public class Questions {
-
-    public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5};
-        int d = 2;
-        int n = arr.length-1 ;
-
-        for(int i = 0;i<d;i++){
-            int temp = arr[0];
-            arr[0] = arr[d-1];
-            arr[n] = temp ;
-        }
-        for(int elem : arr) System.out.print(elem+"  ");
-    }
-}
+// rotate arr 
 
