@@ -139,5 +139,20 @@ package lecture_6;
 
 // **** question-6 *** 
 
-// rotate arr 
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6};
+        int d = 2;
+        int n = arr.length;
 
+        int[] temp = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            temp[i] = arr[(i + d) % n];
+        }
+
+        for (int num : temp) {
+            System.out.print(num + " ");
+        }
+    }
+}
