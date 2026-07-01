@@ -140,19 +140,27 @@ package lecture_6;
 // **** question-6 *** 
 
 public class Main {
+
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6};
-        int d = 2;
-        int n = arr.length;
-
-        int[] temp = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            temp[i] = arr[(i + d) % n];
-        }
-
-        for (int num : temp) {
-            System.out.print(num + " ");
-        }
+        int arr[]={2,0,9,34,423};
+        int n = arr.length ;
+        int d = 3 ;
+        d = d%n ;
+        reverse(arr,0,d-1);
+        reverse(arr,d,n-1);
+        reverse(arr,0,n-1);
     }
-}
+    public static void reverse(int[] arr,int i , int j ) {
+        while(i<j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp ;
+            i++ ;
+            j-- ;
+        }
+        for(int elem : arr){
+            System.out.print(elem+" ");
+        }
+        System.out.println();
+    }
+} 
