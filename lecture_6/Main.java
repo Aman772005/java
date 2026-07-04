@@ -167,19 +167,75 @@ package lecture_6;
 
 // *** question-7 ***
 
-public class Main {
+// public class Main {
 
-    public static void main(String[] args) {
-        int arr[] = {1,6,3,2,5};
-        int n = arr.length+1;
+//     public static void main(String[] args) {
+//         int arr[] = {1,6,3,2,5};
+//         int n = arr.length+1;
 
-        int sum = n*(n+1)/2 ;
+//         int sum = n*(n+1)/2 ;
 
-        int arrsum = 0;
+//         int arrsum = 0;
 
-        for(int num : arr){
-            arrsum += num ;
-        }
-        System.out.println(sum-arrsum);
-    }
-}
+//         for(int num : arr){
+//             arrsum += num ;
+//         }
+//         System.out.println(sum-arrsum);
+//     }
+// }
+
+
+// *** question-8 *** 
+
+// public class Main {
+
+//     public static void main(String[] args) {
+//         int arr[]  = {0,1,0,1,0,1,0,1};
+
+//         int countzeors = 0;
+
+//         for(int elem : arr){
+//             if(elem == 0)  countzeors++;
+//         }
+
+//         for(int i=0;i<arr.length;i++){
+//             if(i<countzeors) arr[i] = 0;
+//             else arr[i] = 1;
+//         }
+
+//         for(int elem : arr){
+//             System.out.print(elem+" ");
+//         }
+
+//     }
+// }
+
+// second solution 
+
+// public class Main {
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,0,0,0,1,0,1};
+//         int n = arr.length;
+
+//         int i = 0 ;
+//         int j = n-1 ;
+
+//         while(i<j){
+//             if(arr[i]==0) i++;
+//             else if(arr[j]==1) j--;
+//             else if(arr[i]==1 && arr[j]==0){
+//                 int temp = arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//                 // arr[i] = 0;
+//                 // arr[j] = 1;
+//                 i++;
+//                 j--;
+//             }
+//         }
+//         for(int elem : arr){
+//             System.out.print(elem+" ");
+//         }
+//     }
+// }
