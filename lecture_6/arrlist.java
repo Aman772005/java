@@ -12,6 +12,17 @@ public class arrlist{
         arr.add(21);
         arr.add(212);
 
+        int i = 0 , j=arr.size()-1;
+
+        while(i<j){
+            int temp = arr.get(i);
+            arr.set(i,arr.get(j));
+            arr.set(j,temp);
+            i++;
+            j--;
+        }
+        System.out.print(arr);
+
         // System.out.println(arr.get(2));
         // System.out.println(arr.get(3));
         // arr.set(3,50);
@@ -41,8 +52,8 @@ public class arrlist{
         // arr.add(1,100);
         // System.out.print(arr);
 
-        Collections.reverse(arr);
-        System.out.print(arr);
+        // Collections.reverse(arr);
+        // System.out.print(arr);
 
 
     }
