@@ -42,7 +42,6 @@ package lecture_6;
 //     }
 // }
 
-
 // *** question-3 *** 
 
 // public class Questions {
@@ -65,7 +64,6 @@ package lecture_6;
 //         System.out.println("Not founded");
 //     }
 // }
-
 
 // *** question-4 *** 
 
@@ -111,7 +109,6 @@ package lecture_6;
 //     }
 // }
 
-
 // solution-2 
 
 // public class Questions {
@@ -135,7 +132,6 @@ package lecture_6;
 //         for(int elem : arr) System.out.print(elem+" ");
 //     }
 // }
-
 
 // **** question-6 *** 
 
@@ -183,7 +179,6 @@ package lecture_6;
 //         System.out.println(sum-arrsum);
 //     }
 // }
-
 
 // *** question-8 *** 
 
@@ -246,7 +241,6 @@ package lecture_6;
 
 //     public static void main(String[] args) {
 //         int arr[] = {1,2,3,4,5};
-        
 
 //         for(int i=0;i<arr.length-1;i+=2){
 //                 int temp = arr[i];
@@ -261,22 +255,80 @@ package lecture_6;
 
 // *** question-9 ***
 
+
+// import java.util.ArrayList;
+// import java.util.Collections;
+
+// public class Main {
+
+//     public static void main(String[] args) {
+//         int arr[] = { 9, 9, 9 };
+
+//         ArrayList<Integer> result = addOne(arr);
+
+//         System.out.print(result);
+//     }
+
+//     public static ArrayList<Integer> addOne(int arr[]) {
+
+//         ArrayList<Integer> ans = new ArrayList<>();
+
+//         int n = arr.length;
+//         int carry = 1;
+
+//         for (int i = n - 1; i >= 0; i--) {
+//             if (arr[i] + carry <= 9) {
+//                 ans.add(arr[i] + carry);
+//                 carry = 0;
+//             } else {
+//                 ans.add(0);
+//                 carry = 1;
+//             }
+//         }
+//         if (carry == 1) {
+//             ans.add(1);
+//         }
+
+//         Collections.reverse(ans);
+//         return ans;
+//     }
+// }
+
+// *** question-10 *** 
+
 public class Main {
 
     public static void main(String[] args) {
+        int a  [] = {1,2,3,4,5,6,7,19301243,38472936};
+        int b [] = {9,10,19,29,23,24,154,22321};
+        int c [] = new int [a.length+b.length]; 
 
-        int arr[] = {9,9,9};
-        int num = 0;
-
-        for(int elem:arr){
-            num = num*10 + elem ;
+        for(int elem : c){
+            System.out.print(elem+" ");
         }
 
-        System.out.println(num);
+        System.out.println();
 
-        num = num+1 ;
+        merge(a,b,c);
 
-        
+        for(int elem : c){
+            System.out.print(elem+" ");
+        }
+    }
+    public static void merge(int a[],int b[],int c[]) {
+        int i = 0,j = 0,k = 0;
 
+        while(i<a.length && j<b.length){
+            if(a[i]<b[j]) {c[k++] = a[i++];}
+            else {c[k++] = b[j++];}
+        }
+
+        while(i<a.length){
+            c[k++] = a[i++];
+        }
+
+        while(j<b.length){
+            c[k++] = b[j++];
+        }
     }
 }
