@@ -9,8 +9,8 @@ public class bubblesort {
         int arr[] = {1,-2,2,3,4,-5,0,2,7};
         int n = arr.length-1;
         print(arr);
-        for(int j=1;j<n-1;j++){
-            for(int i = 0;i<n;i++){
+        for(int j=1;j<n;j++){
+            for(int i = 0;i<n-j;i++){
                 if(arr[i]>arr[i+1]){
                     int temp = arr[i];
                      arr[i] = arr[i+1] ;
