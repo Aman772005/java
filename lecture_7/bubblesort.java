@@ -69,25 +69,27 @@ public class bubblesort {
     public static void main(String[] args) {
         int arr[] = {1,4,2,14,0,31,0,24,4,0,0,0,-1,-1,-23,0};
         int n = arr.length-1;
-        int m = n;
 
         print(arr);
+
         for(int i = 0;i<n;i++){
-            int swap = 0;
             for(int j = 0;j<n-i;j++){
                 if(arr[j]==0){
                     int temp = arr[j];
-                    arr[j] = arr[m];
-                    arr[m] = temp;
-                    m--;
-                }
-                if(arr[j]>arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1] ;
+                    arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
             }
-            if(swap == 0) break;
+        }
+
+        for(int i = 0;i<n;i++){
+            for(int j=0;j<n-i;j++){
+                if(arr[j]!=0 && arr[j+1]!=0 && arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp; 
+                }
+            }
         }
         print(arr);
     }
