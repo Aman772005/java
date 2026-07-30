@@ -17,3 +17,4 @@ public class BinarySearch {
         System.out.print(search(arr,target));  
     }
 }
+// update
