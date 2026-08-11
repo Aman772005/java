@@ -77,5 +77,9 @@ public class BinarySearch{
     }
 }
 
+// gfg floor of sorted array 
+
+
+
 
 
