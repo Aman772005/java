@@ -109,24 +109,26 @@
 //     }
 // }
 
-class Solution {
-    int floorSqrt(int n) {
-        // code here
-        int lo = 0 , hi = n ;
-        int ans = 0;
-        while(lo<=hi){
-            int mid = (lo+hi)/2 ;
-            if((mid*mid)==n) return mid ;
-            else if ((mid*mid>n)){
-                hi = mid-1;
-            }else{
-                lo = mid+1 ;
-                ans = mid ;
-            }
-        }
-        return ans ;
-    }
-}
+// class Solution {
+//     int floorSqrt(int n) {
+//         // code here
+//         int lo = 0 , hi = n ;
+//         int ans = 0;
+//         while(lo<=hi){
+//             int mid = (lo+hi)/2 ;
+//             if((mid*mid)==n) return mid ;
+//             else if ((mid*mid>n)){
+//                 hi = mid-1;
+//             }else{
+//                 lo = mid+1 ;
+//                 ans = mid ;
+//             }
+//         }
+//         return ans ;
+//     }
+// }
+
+
 
 
 
